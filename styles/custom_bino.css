@@ -4,6 +4,11 @@
   background: #18590d;
 }
 
+.table-green-alt {
+  color: #ffffff;
+  background: #248414;
+}
+
 .table-green td, .table-green th, .table-green thead th {
   border-color: #ffffff;
   text-align: center;
