@@ -1,3 +1,33 @@
+.img-fluid-ne {
+  max-width: 40%;
+  height: auto;
+}
+
+.border-right-or {
+  border-right: 2px solid #e24a21 !important;
+}
+
+.network-eff h2 {
+  font-size: 3.0vh;
+}
+
+.network-eff h3 {
+  font-size: 2.0vh;
+}
+
+.network-eff h4 {
+  font-size: 1.1vh;
+}
+
+p {
+  font-size: 2vmin;
+}
+
+.rp-average {
+  width: 100%;
+  text-align: left;
+}
+
 /* GREEN TABLE */
 .table-green {
   color: #ffffff;
@@ -54,6 +84,7 @@
 
 .table-white {
   background: #ffffff;
+  color: #000000;
 }
 
 .table-orange thead {
@@ -89,6 +120,11 @@
 
 .left-align {
   text-align: left;
+}
+
+.text-center-bold {
+  text-align: center;
+  font-weight: 600;
 }
 
 .vcenter {
@@ -214,39 +250,33 @@
 }
 
 .green-total-border-md h1 {
-
-    font-size: 1.5rem;
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #000000;
-
+  font-size: 1.5rem;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000000;
 }
 
 .green-total-border-md h2 {
-
-    font-size: 0.6rem;
-    position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #000000;
-
+  font-size: 0.6rem;
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000000;
 }
 
 .green-total-border-md h3 {
-
-    font-size: 0.7rem;
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #000000;
-
+  font-size: 0.7rem;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000000;
 }
 
 /* END GREEN CIRCLE FULL BORDER MD */
@@ -477,7 +507,6 @@
   color: #000000;
 }
 
-
 .oc-total-border-md-bt h1 {
   font-size: 1.2rem;
   position: absolute;
@@ -525,3 +554,13 @@
 }
 
 /* END ORANGE CIRCLE DOTTED MD */
+@media(min-width: 768px) {
+  .col-1-5 {
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

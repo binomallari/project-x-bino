@@ -44,11 +44,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5rem;
+      font-size: 5.9vw;
     margin-bottom: 0.25rem;
     line-height: 3.25rem;
     font-family: "ProximaSoft Medium";
 }
+
 
 /* GENERAL */
 body {
