@@ -1,3 +1,7 @@
+
+.clearfix {
+  overflow: auto;
+}
 .img-fluid-ne {
   max-width: 40%;
   height: auto;

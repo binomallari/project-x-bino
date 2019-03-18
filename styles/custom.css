@@ -867,6 +867,8 @@ img.return-icon {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
+
+          .no-img {display: none;}
     .nav-side-menu {
         position: relative;
         width: 100%;
@@ -974,6 +976,8 @@ img.return-icon {
     #volume-calculator {
         display: none;
     }
+
+
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -1041,6 +1045,10 @@ img.return-icon {
     .th-md {
         width: 200px;
     }
+
+    .th-lg {
+        width: 350px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -1055,6 +1063,7 @@ img.return-icon {
     #volume-calculator {
         max-width: 45px;
     }
+
 }
 
 
