@@ -1,7 +1,15 @@
+.cso-star {
+  background: #fff url(../images/star01.png) no-repeat left .75rem center;
+  background-size: auto;
+  background-size: 50px;
+  border-radius: 0;
+  text-align: left;
+}
 
 .clearfix {
   overflow: auto;
 }
+
 .img-fluid-ne {
   max-width: 40%;
   height: auto;
@@ -86,6 +94,16 @@ p {
   background: #f04f22;
 }
 
+.table-orange h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.table-orange h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .table-white {
   background: #ffffff;
   color: #000000;
@@ -93,6 +111,24 @@ p {
 
 .table-orange thead {
   background: #cd4528;
+}
+
+.th-sm-or {
+  width: 20%;
+}
+
+.th-md-or {
+  width: 150px;
+  padding: 30px;
+}
+
+.th-md-or2 {
+  width: 196px;
+  padding: 30px;
+}
+
+.th-lg-or {
+  width: 80%;
 }
 
 .table-orange td, .table-orange th, .table-orange thead th {
@@ -137,7 +173,41 @@ p {
   float: none;
 }
 
-/* GRAY CIRCLE FULL */
+/* .gray-circle-lt */
+.gray-circle-lt {
+  width: 180px;
+  height: 180px;
+  background: #efeff0;
+  border: 1px solid #efeff0;
+  border-radius: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.total-gray-circle-lt h1 {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #ff4e00;
+  font-weight: 600;
+}
+
+.total-gray-circle-lt h2 {
+  font-size: 1rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* .gray-circle  */
 .gray-circle {
   width: 180px;
   height: 180px;
