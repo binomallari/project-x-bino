@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="modal-body">
+  <div class="modal-body pt-0">
     <!-- HEADER -->
     <div class="row py-2-ov table-dark margin-bt">
       <div class="col-sm-6">
@@ -31,44 +31,44 @@
     <div class="row py-2-ov">
       <div class="col-xl-12">
 
-        <table class="table-white table-responsive-md">
+        <table class="table-white table-responsive-md custable js-table-data">
           <thead>
             <tr>
-              <td>&nbsp;</td>
-              <td class="text-center-bold th-lg">
+              <th class="text-center-bold th-lg"><h6>Name</h6></th>
+              <th class="text-center-bold th-lg">
                 <h6>Monday</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Tuesday</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Wednesday</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Thursday</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Friday</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Failures</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Total</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Efficiency</h6>
-              </td>
-              <td class="text-center-bold th-lg">
+              </th>
+              <th class="text-center-bold th-lg">
                 <h6>Profitability</h6>
-              </td>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td class="pr-2 border-right-or py-2 th-lg"><img src="images/avatar.png" class="img-fluid-ne pt-1 pr-2 no-img float-left">
-                <h6>Joe Farrie</h6>
+                <h6 class="">Joe Farrie</h6>
                 <p class="small">North East /Tyneside 1</p>
               </td>
               <td class="px-2 border-right-or th-sm">
@@ -544,7 +544,7 @@
 
             <tr>
               <td class="pr-2 border-right-or py-2 th-lg"><img src="images/avatar.png" class="img-fluid-ne pt-1 pr-2 no-img float-left">
-                <h6>Joe Farrie</h6>
+                <h6 class="data-label">Joe Farrie</h6>
                 <p class="small">North East /Tyneside 1</p>
               </td>
               <td class="px-2 border-right-or th-sm">
@@ -575,9 +575,6 @@
                 <p class="small">Weekly cost: &#163;500.00 <br />Local GP: &#163;450.00<br />Profitability: <span style="color:#f42536;">-&#163;50.00</span></p>
               </td>
             </tr>
-
-
-
 
           </tbody>
         </table>
@@ -587,6 +584,28 @@
     <!--- <div class="row"> -->
 
   </div><!-- <div class="modal-body"> -->
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!-- <script src='responsive-table.js'></script> -->
+
+  <script>
+    $(document).ready(function() {
+      $('.js-table-data').each(function() {
+        table = $(this);
+        tableRow = table.find('tr');
+        table.find('td').each(function() {
+          tdIndex = $(this).index();
+          if ($(tableRow).find('th').eq(tdIndex).attr('data-label')) {
+            thText = $(tableRow).find('th').eq(tdIndex).data('label');
+          } else {
+            thText = $(tableRow).find('th').eq(tdIndex).text();
+          }
+          $(this).attr('data-label', thText + ':');
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>

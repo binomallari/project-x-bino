@@ -1,3 +1,77 @@
+.orange-text {
+  color: #f04f22;
+}
+
+.cust-small {
+  font-size: 65%;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .custable thead {
+    display: none;
+  }
+
+/* #nodisp {display: inline-block;} */
+
+  .custable .border-right-or {
+    border-right: 0px  !important;
+}
+
+  .custable tr {
+    display: block;
+    position: relative;
+    padding: 1.2em 0;
+  }
+
+  .custable tr:first-of-type {
+    border-top: 1px solid #ccc;
+  }
+
+  .custable td {
+    display: table-row;
+  }
+
+  .custable td:before {
+    content: attr(data-label);
+    display: table-cell;
+    font-weight: bold;
+    padding: 0.2em 0.6em 0.2em 0;
+    text-align: right;
+  }
+
+  .custable td:last-child:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.total-gray-circle-nsu-lt h1 {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #ff4e00;
+  font-weight: 600;
+}
+
+.total-gray-circle-nsu-lt h2 {
+  font-size: 1rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000000;
+  font-weight: 600;
+}
+
 .cso-star {
   background: #fff url(../images/star01.png) no-repeat left .75rem center;
   background-size: auto;
@@ -117,12 +191,15 @@ p {
   color: #000000;
 }
 
-.table-white  .table td, .table th {
+.table-white .table td, .table th {
+  padding: 0.20rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
 
-    padding: 0.20rem;
-    vertical-align: middle;
-    border-top: 1px solid #dee2e6;
-
+.table-white thead tr th {
+  font-size: 1rem;
+  font-family: "ProximaSoft Regular";
 }
 
 .table-orange thead {

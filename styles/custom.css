@@ -11,13 +11,13 @@
 }
 
 @font-face {
-    font-family: "ProximaSoft Semibold";
-    src: url("./fonts/ProximaSoft Semibold.otf") format("opentype");
+    font-family: "ProximaSoft Semitotal-gray-circle-nsu-l";
+    src: url("./fonts/ProximaSoft Semi.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "ProximaSoft Bold";
-    src: url("./fonts/ProximaSoft Bold.otf") format("opentype");
+    font-family: "ProximaSoft ";
+    src: url("./fonts/ProximaSoft .otf") format("opentype");
 }
 
 ::-webkit-scrollbar {

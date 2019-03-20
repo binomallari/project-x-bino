@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="modal-body">
+  <div class="modal-body pt-0">
     <!-- HEADER -->
     <div class="row py-2-ov table-dark margin-bt">
       <div class="col-sm-6">
@@ -34,44 +34,24 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row px-5 pt-4">
       <div class="table-white table-responsive-sm">
-        <table class="table table-bordered">
-
+        <table class="custable js-table-data">
           <thead>
             <tr>
-              <th class="pr-5">&nbsp;</th>
-              <th scope="col" class="th-md">
-                Client name
-              </th>
-              <th class="th-sm" scope="col">
-                Region
-              </th>
-              <th scope="col" class="th-md">
-                Trading with LCP
-              </th>
-              <th scope="col" class="th-md">
-            Number of Shipments
-              </th>
-              <th class="th-sm" scope="col">
-              No. Tickets
-              </th>
-              <th class="th-sm">
-                % Ratio
-              </th>
-              <th scope="col" class="th-lg">
-                Average Messages per ticket
-              </th>
-              <th scope="col" class="th-md">
-                Most frequent subject
-              </th>
-
+              <th class="th-md">Client name</th>
+              <th class="th-sm">Region</th>
+              <th class="th-md">Trading with LCP</th>
+              <th class="th-md">Number of Shipments</th>
+              <th class="th-sm">No. Tickets</th>
+              <th class="th-sm">% Ratio</th>
+              <th class="th-lg">Average Messages per ticket</th>
+              <th class="th-md">Most frequent subject</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class=" tick-sad"></td>
-              <td>FE Maughans (4.3)</td>
+              <td><i class="far fa-frown mr-2 orange-text"></i>FE Maughans (4.3)</td>
               <td>North East</td>
               <td>1053 days</td>
               <td>200</td>
@@ -87,6 +67,27 @@
     </div>
 
   </div><!-- <div class="modal-body"> -->
+
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <!-- <script src='responsive-table.js'></script> -->
+
+      <script>
+        $(document).ready(function() {
+          $('.js-table-data').each(function() {
+            table = $(this);
+            tableRow = table.find('tr');
+            table.find('td').each(function() {
+              tdIndex = $(this).index();
+              if ($(tableRow).find('th').eq(tdIndex).attr('data-label')) {
+                thText = $(tableRow).find('th').eq(tdIndex).data('label');
+              } else {
+                thText = $(tableRow).find('th').eq(tdIndex).text();
+              }
+              $(this).attr('data-label', thText + ':');
+            });
+          });
+        });
+      </script>
 </body>
 
 </html>
